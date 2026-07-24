@@ -142,10 +142,10 @@ const daws = ['Wwise', 'Reaper', 'Pro Tools', 'Ableton Live', 'Audacity'];
       <section id="about">
         <h2><span class="tick">▍</span>About</h2>
         <div class="about-grid">
-          <div class="fill-slot slot-headshot">
-            <p class="fill-label">HEADSHOT SLOT</p>
-            <p>One decent photo of you.</p>
-          </div>
+          <figure class="headshot">
+            <img src="/headshot-temp.jpg" alt="Devon Birdwell — temporary composite headshot" width="600" height="750" loading="lazy" />
+            <figcaption class="mono">Temporary AI composite from family photos — send a real headshot to replace it.</figcaption>
+          </figure>
           <div class="bio">
             <p>
               I'm a sound designer and live/production mixer with a B.F.A. in Sound Design
@@ -284,7 +284,8 @@ const daws = ['Wwise', 'Reaper', 'Pro Tools', 'Ableton Live', 'Audacity'];
       .award-year { color: var(--dim); font-size: 0.78rem; margin-left: auto; }
 
       .about-grid { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: start; }
-      .slot-headshot { min-height: 220px; display: flex; flex-direction: column; justify-content: center; }
+      .headshot img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); display: block; }
+      .headshot figcaption { color: var(--accent); font-size: 0.65rem; margin-top: 0.4rem; line-height: 1.4; }
       .bio p + p { margin-top: 0.9rem; }
 
       .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
