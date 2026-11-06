@@ -1,43 +1,68 @@
 ---
+// Featured productions — Devon's four picks (2026-08-06 email).
 const featured = [
   {
-    title: 'The Play That Goes Wrong',
-    role: 'Live Mixer',
-    date: 'May 2025',
+    title: 'Crazy for You',
+    role: 'Sound Designer & Live Mixer',
+    context: 'Musical · Wheelwright Auditorium (800-seat)',
+    date: 'Mar 2022',
     award: null,
   },
   {
-    title: 'SCAD Sportsdesk',
-    role: 'Live Mixer — Multi-cam Sports Broadcast',
+    title: 'Souer Celeste',
+    role: 'Re-Recording Mixer',
+    context: 'Short film',
+    date: 'May 2025',
+    award: 'Silver — Best Sound Design · Independent Short Awards 2025',
+  },
+  {
+    title: 'SCAD SportsDesk',
+    role: 'Supervising Sound Editor & Re-Recording Mixer',
+    context: 'Multi-cam broadcast',
     date: 'Feb 2025',
     award: 'NATAS Southeast Emmy® Nominated',
   },
   {
-    title: 'Crazy For You',
-    role: 'Sound Designer & Live Mixer',
-    date: 'Mar 2022',
+    title: 'Wodr',
+    role: 'SFX Editor',
+    context: 'Short film',
+    date: 'May 2025',
     award: null,
   },
 ];
 
-const productionSound = [
-  { title: 'Behind Closed Doors', date: 'Apr 2025' },
-  { title: 'Dubbings & Dragons', date: 'Mar 2025' },
-  { title: 'Daughter of The Sea', date: 'Apr 2024' },
-  { title: 'He Loves Her', date: 'Apr 2024' },
-  { title: 'Sins of The Father', date: 'Mar 2024' },
-  { title: 'Kids Will Be Kids', date: 'Mar 2023' },
-  { title: 'Splash', date: 'Mar 2023', award: 'Red Dot Sound Design Award' },
+// Post-production credits — from the film résumé (uid33).
+const postProduction = [
+  { title: 'Wodr', role: 'SFX Editor', date: 'May 2025' },
+  { title: 'Souer Celeste', role: 'Re-Recording Mixer', date: 'May 2025' },
+  { title: 'The Secret Life of Addie LaRue', role: 'Foley Artist & Mixer', date: 'May 2025' },
+  { title: 'Behind Closed Doors', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'Apr 2025' },
+  { title: 'Dubbings & Dragons', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'Mar 2025' },
+  { title: 'SCAD SportsDesk', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'Feb 2025' },
+  { title: 'Velour Gold', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'May 2024' },
+  { title: 'Daughter of the Sea', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'Apr 2024' },
+  { title: 'He Loves Her', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'Apr 2024' },
+  { title: 'Sins of the Father', role: 'Supervising Sound Editor & Re-Recording Mixer', date: 'Mar 2024' },
+  { title: 'Countdown to Infection', role: 'SFX Editor', date: 'Apr 2023' },
+  { title: 'Splash', role: 'Dialogue & SFX Editor', date: 'Mar 2023', award: 'Red Dot Sound Design Award' },
+];
+
+// Live & production sound — the distinctly live/on-set work (Play That Goes Wrong intentionally omitted per Devon).
+const liveSound = [
+  { title: 'Crazy for You', role: 'Sound Designer & Live Mixer · Wheelwright Auditorium', date: 'Mar 2022' },
+  { title: 'SCAD SportsDesk', role: 'Live Mixer · Multi-cam Broadcast', date: 'Feb 2025' },
+  { title: 'Kids Will Be Kids', role: 'Production Sound Mixer', date: 'Mar 2023' },
 ];
 
 const awards = [
-  { name: 'Red Dot Sound Design Award', detail: 'Production Mixer — Splash', year: '2023' },
-  { name: 'Silver — Best Sound Design', detail: 'Rerecording Mixer — Souer Celeste, Independent Short Awards', year: '2025' },
-  { name: 'NATAS Southeast Emmy® Nomination', detail: 'Multi-cam broadcast — SCAD Sportsdesk', year: '2025' },
+  { name: 'Red Dot Sound Design Award', detail: 'SFX Editor — Splash', year: '2023' },
+  { name: 'Silver — Best Sound Design', detail: 'Re-Recording Mixer — Souer Celeste · Independent Short Awards', year: '2025' },
+  { name: 'NATAS Southeast Emmy® Nomination', detail: 'Multi-cam Broadcast — SCAD SportsDesk', year: '2025' },
 ];
 
 const consoles = ['LAWo', 'Avid', 'Yamaha'];
-const daws = ['Wwise', 'Reaper', 'Pro Tools', 'Ableton Live', 'Audacity'];
+const daws = ['Pro Tools', 'Wwise', 'Reaper', 'Ableton Live', 'Audacity'];
+const post = ['Dialogue Editing', 'SFX Editing', 'Foley', 'ADR', 'Re-Recording Mixing'];
 ---
 
 <html lang="en">
@@ -45,88 +70,112 @@ const daws = ['Wwise', 'Reaper', 'Pro Tools', 'Ableton Live', 'Audacity'];
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>Devon Birdwell — Sound Designer & Live Mixer</title>
-    <meta name="description" content="Devon Birdwell — sound designer, live mixer, and production sound mixer for live events, theatre, and broadcast. Atlanta, GA." />
+    <title>Devon Birdwell — Sound Designer & Re-Recording Mixer</title>
+    <meta
+      name="description"
+      content="Devon Birdwell — sound designer, supervising sound editor, and re-recording mixer for film, theatre, and broadcast. Atlanta, GA."
+    />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <div class="preview-banner" id="preview-banner">
-      PREVIEW BUILD — dashed boxes are yours to fill, Devon. Everything else is already live-ready.
+    <div class="preview-banner">
+      PREVIEW — Devon, this is yours to approve. Dashed blocks mark the pieces still to send.
     </div>
 
-    <header class="hero">
+    <nav class="topnav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">Devon Birdwell</a>
+        <div class="nav-links mono">
+          <a href="#work">Work</a>
+          <a href="#credits">Credits</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
       <div class="wrap">
-        <p class="kicker">Atlanta, GA</p>
+        <p class="kicker mono">Atlanta, GA</p>
         <h1>Devon Birdwell</h1>
-        <p class="role">Sound Designer &amp; Live Mixer</p>
-        <p class="sub">Live theatre · Multi-cam broadcast · Production sound · Large-scale event staging</p>
+        <p class="role">Sound Designer · Supervising Sound Editor · Re-Recording Mixer</p>
+        <p class="sub">Film post-production · Live theatre · Multi-cam broadcast · Production sound</p>
         <div class="reel">
           <video controls preload="none" playsinline poster="/reel-poster.jpg">
             <source src="/reel.mp4" type="video/mp4" />
             Your browser doesn't support embedded video.
             <a href="/reel.mp4">Download the reel</a>.
           </video>
-          <p class="reel-caption">Showreel — 70 seconds</p>
+          <p class="reel-caption mono">Showreel — 70 seconds</p>
         </div>
       </div>
     </header>
 
     <main class="wrap">
-      <!-- SELECTED WORK -->
+      <!-- FEATURED WORK -->
       <section id="work">
-        <h2><span class="tick">▍</span>Selected Work</h2>
-        <div class="cards">
-          {featured.map((c) => (
-            <article class="card">
-              <header>
-                <h3>{c.title}</h3>
-                <p class="mono meta">{c.role} · {c.date}</p>
-                {c.award && <p class="award-badge">{c.award}</p>}
-              </header>
-              <div class="fill-slot">
-                <p class="fill-label">YOURS TO FILL</p>
-                <p>Venue + scale (house size, tour, festival) and 1–3 sentences on the sonic concept — what was the design idea, what problem did you solve?</p>
-              </div>
-              <div class="fill-slot slot-photo">
-                <p class="fill-label">PHOTO SLOT</p>
-                <p>A production shot from this show (+ photographer credit). A shot of you at the console is gold.</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+        <h2>Selected Work</h2>
+        <p class="section-note">Four productions, each in its own light. Concept, stills, and design excerpts to come.</p>
 
-      <!-- AUDIO EXCERPTS -->
-      <section id="audio">
-        <h2><span class="tick">▍</span>Design Excerpts</h2>
-        <p class="section-note">Titled cues that show the design detail the reel can't.</p>
-        <div class="cards three">
-          {[1, 2, 3].map(() => (
-            <div class="fill-slot slot-audio">
-              <p class="fill-label">AUDIO EXCERPT SLOT</p>
-              <p>A short clip named by its dramatic function — e.g. <em>"Storm transition — Crazy For You"</em> — not "Track 1."</p>
+        {featured.map((c) => (
+          <article class="project">
+            <div class="project-head">
+              <h3>{c.title}</h3>
+              <p class="mono meta">{c.role} · {c.context} · {c.date}</p>
+              {c.award && <p class="award-badge">{c.award}</p>}
             </div>
-          ))}
+            <div class="fill-slot">
+              <p class="fill-label mono">Concept — yours to fill</p>
+              <p>One to three sentences on the sonic idea: what were you designing for, and what problem did you solve?</p>
+            </div>
+            <div class="media-row">
+              <div class="fill-slot slot-photo">
+                <p class="fill-label mono">Production stills</p>
+                <p>A photo or two from this show (+ photographer credit). You at the console or board is gold.</p>
+              </div>
+              <div class="fill-slot slot-audio">
+                <p class="fill-label mono">Design excerpt</p>
+                <p>A short cue named by its dramatic function — e.g. <em>"Storm transition"</em> — not "Track 1."</p>
+              </div>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <!-- CREDITS -->
+      <section id="credits">
+        <h2>Credits</h2>
+        <div class="credits-grid">
+          <div class="credit-col">
+            <h3 class="mono col-head">Post-Production Sound</h3>
+            <ul class="credits">
+              {postProduction.map((c) => (
+                <li>
+                  <span class="credit-title">{c.title}</span>
+                  <span class="mono credit-role">{c.role} · {c.date}</span>
+                  {c.award && <span class="award-badge inline">{c.award}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="credit-col">
+            <h3 class="mono col-head">Live &amp; Production Sound</h3>
+            <ul class="credits">
+              {liveSound.map((c) => (
+                <li>
+                  <span class="credit-title">{c.title}</span>
+                  <span class="mono credit-role">{c.role} · {c.date}</span>
+                </li>
+              ))}
+            </ul>
+            <p class="col-note">Additional on-set production-sound credits on the résumé.</p>
+          </div>
         </div>
       </section>
 
-      <!-- PRODUCTION SOUND -->
-      <section id="production-sound">
-        <h2><span class="tick">▍</span>Production Sound</h2>
-        <ul class="credits">
-          {productionSound.map((c) => (
-            <li>
-              <span class="credit-title">{c.title}</span>
-              <span class="mono credit-role">Production Sound Mixer · {c.date}</span>
-              {c.award && <span class="award-badge inline">{c.award}</span>}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <!-- AWARDS -->
+      <!-- RECOGNITION -->
       <section id="awards">
-        <h2><span class="tick">▍</span>Recognition</h2>
+        <h2>Recognition</h2>
         <ul class="awards">
           {awards.map((a) => (
             <li>
@@ -140,172 +189,206 @@ const daws = ['Wwise', 'Reaper', 'Pro Tools', 'Ableton Live', 'Audacity'];
 
       <!-- ABOUT -->
       <section id="about">
-        <h2><span class="tick">▍</span>About</h2>
+        <h2>About</h2>
         <div class="about-grid">
           <figure class="headshot">
-            <img src="/headshot-temp.jpg" alt="Devon Birdwell — temporary composite headshot" width="600" height="750" loading="lazy" />
-            <figcaption class="mono">Temporary AI composite from family photos — send a real headshot to replace it.</figcaption>
+            <img
+              src="/headshot-temp.jpg"
+              alt="Devon Birdwell — temporary composite headshot"
+              width="600"
+              height="750"
+              loading="lazy"
+            />
+            <figcaption class="mono">Temporary AI composite — send a real headshot to replace it.</figcaption>
           </figure>
           <div class="bio">
             <p>
-              I'm a sound designer and live/production mixer with a B.F.A. in Sound Design
-              from the Savannah College of Art &amp; Design and six-plus years across live
-              theatre, multi-cam broadcast, film production sound, and large-scale event
-              staging. I mix front-of-house, design for the stage, and hold a set together
-              when it's rolling — fast decisions under pressure are the job.
+              I'm a sound designer, supervising sound editor, and re-recording mixer with a
+              B.F.A. in Sound Design from the Savannah College of Art &amp; Design. My work runs
+              from film post — dialogue, Foley, ADR, SFX, and the final mix — to live theatre
+              sound design and multi-cam broadcast.
             </p>
             <p>
-              Currently with Rhino Staging in Atlanta, supporting corporate events,
-              concerts, and festivals from rigging to showtime.
+              I like the whole arc of a soundtrack: shaping the design idea early, then carrying
+              it all the way to a mix that feels inevitable. Fast decisions under pressure are
+              part of the job, whether the room is a dub stage or an 800-seat house.
             </p>
+            <div class="fill-slot inline-slot">
+              <p class="fill-label mono">Your words — optional</p>
+              <p>Swap in your own bio any time. This is a placeholder in your voice, not final copy.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS -->
+      <!-- TOOLS -->
       <section id="skills">
-        <h2><span class="tick">▍</span>Consoles &amp; Tools</h2>
+        <h2>Consoles &amp; Craft</h2>
         <div class="skills-grid">
           <div>
-            <h3 class="mono">CONSOLES</h3>
-            <ul class="mono taglist">
-              {consoles.map((s) => <li>{s}</li>)}
-            </ul>
+            <h3 class="mono col-head">Consoles</h3>
+            <ul class="mono taglist">{consoles.map((s) => <li>{s}</li>)}</ul>
           </div>
           <div>
-            <h3 class="mono">DAWs</h3>
-            <ul class="mono taglist">
-              {daws.map((s) => <li>{s}</li>)}
-            </ul>
+            <h3 class="mono col-head">DAWs</h3>
+            <ul class="mono taglist">{daws.map((s) => <li>{s}</li>)}</ul>
           </div>
           <div>
-            <h3 class="mono">PRACTICE</h3>
-            <ul class="mono taglist">
-              <li>FOH / monitor mixing</li>
-              <li>Production mixing</li>
-              <li>System installation</li>
-              <li>Console programming</li>
-            </ul>
+            <h3 class="mono col-head">Post Craft</h3>
+            <ul class="mono taglist">{post.map((s) => <li>{s}</li>)}</ul>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
       <section id="contact">
-        <h2><span class="tick">▍</span>Contact</h2>
+        <h2>Contact</h2>
         <p class="contact-line">
           <a class="btn" href="mailto:devonbirdwell@gmail.com">devonbirdwell@gmail.com</a>
-          <a class="btn ghost" href="/Devon-Birdwell-Resume.pdf" download>Resume (PDF)</a>
+          <a class="btn ghost" href="/Devon-Birdwell-Resume.pdf" download>Live / Events Résumé</a>
+          <a class="btn ghost" href="/Devon-Birdwell-Post-Production-Resume.pdf" download>Post-Production Résumé</a>
         </p>
         <div class="fill-slot slot-links">
-          <p class="fill-label">LINKS SLOT</p>
+          <p class="fill-label mono">Links — yours to fill</p>
           <p>LinkedIn / socials you want public, plus anything already hosted (SoundCloud, Vimeo, YouTube).</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p class="mono">© 2026 Devon Birdwell · Atlanta, GA</p>
+      <p class="mono">© 2026 Devon Birdwell · Atlanta, GA · <a href="#top">Back to top</a></p>
     </footer>
 
     <style>
       :root {
-        --bg: #0a0a0c;
-        --panel: #121216;
-        --ink: #f2efe9;
-        --dim: #9a958c;
-        --accent: #e0a63c;
-        --line: #26262c;
+        --bg: #f7f5f0;
+        --panel: #fffefb;
+        --ink: #1c1b19;
+        --dim: #6f6b63;
+        --line: #e0dbd0;
+        --slot-bg: #efece3;
+        --slot-line: #cbc3b4;
+        --note: #8a5a2b;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html { scroll-behavior: smooth; }
       body {
         background: var(--bg);
         color: var(--ink);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-        line-height: 1.6;
+        font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
       }
       .mono { font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, Consolas, monospace; }
-      .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+      .wrap { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
 
       .preview-banner {
-        background: var(--accent);
-        color: #1a1405;
-        text-align: center;
-        padding: 0.5rem 1rem;
-        font-size: 0.85rem;
-        font-weight: 600;
+        background: var(--ink); color: var(--bg);
+        text-align: center; padding: 0.5rem 1rem;
+        font-size: 0.8rem; letter-spacing: 0.02em;
       }
 
-      .hero { padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--line); }
-      .kicker { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; }
-      .hero h1 { font-size: clamp(2.6rem, 7vw, 4.5rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }
-      .role { font-size: clamp(1.2rem, 3vw, 1.6rem); color: var(--ink); margin-top: 0.4rem; font-weight: 300; }
-      .sub { color: var(--dim); margin-top: 0.6rem; font-size: 0.95rem; }
-      .reel { margin-top: 2.25rem; }
-      .reel video { width: 100%; border-radius: 8px; border: 1px solid var(--line); display: block; background: #000; }
-      .reel-caption { color: var(--dim); font-size: 0.8rem; margin-top: 0.5rem; text-align: right; }
+      /* Nav */
+      .topnav {
+        position: sticky; top: 0; z-index: 10;
+        background: rgba(247, 245, 240, 0.9); backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 3.25rem; }
+      .brand { font-weight: 600; text-decoration: none; color: var(--ink); letter-spacing: 0.01em; }
+      .nav-links { display: flex; gap: 1.5rem; font-size: 0.78rem; }
+      .nav-links a { color: var(--dim); text-decoration: none; text-transform: uppercase; letter-spacing: 0.12em; }
+      .nav-links a:hover { color: var(--ink); }
 
-      section { padding: 3.25rem 0 0.5rem; }
-      h2 { font-size: 1.5rem; letter-spacing: 0.01em; margin-bottom: 1.25rem; }
-      .tick { color: var(--accent); }
-      .section-note { color: var(--dim); margin: -0.75rem 0 1.25rem; font-size: 0.9rem; }
+      /* Hero */
+      .hero { padding: 4.5rem 0 3.5rem; border-bottom: 1px solid var(--line); }
+      .kicker { color: var(--dim); font-size: 0.78rem; letter-spacing: 0.28em; text-transform: uppercase; }
+      .hero h1 {
+        font-size: clamp(2.8rem, 8vw, 5rem); font-weight: 300;
+        letter-spacing: -0.02em; line-height: 1.02; margin-top: 0.6rem;
+      }
+      .role { font-size: clamp(1.05rem, 2.6vw, 1.4rem); margin-top: 0.9rem; font-weight: 400; }
+      .sub { color: var(--dim); margin-top: 0.5rem; font-size: 0.92rem; }
+      .reel { margin-top: 2.5rem; }
+      .reel video { width: 100%; border-radius: 3px; border: 1px solid var(--line); display: block; background: #000; }
+      .reel-caption { color: var(--dim); font-size: 0.75rem; margin-top: 0.5rem; text-align: right; letter-spacing: 0.04em; }
 
-      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1rem; }
-      .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1.25rem; }
-      .card h3 { font-size: 1.15rem; }
-      .meta { color: var(--dim); font-size: 0.8rem; margin: 0.35rem 0 0.5rem; }
+      /* Sections */
+      section { padding: 3.75rem 0 0.75rem; }
+      h2 {
+        font-size: 0.9rem; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 0.2em; padding-bottom: 0.85rem; margin-bottom: 1.75rem;
+        border-bottom: 1px solid var(--line);
+      }
+      .section-note { color: var(--dim); margin: -1.1rem 0 2rem; font-size: 0.92rem; }
+
+      /* Projects — editorial gallery */
+      .project { padding-bottom: 2.5rem; margin-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
+      .project:last-child { border-bottom: none; }
+      .project-head h3 { font-size: 1.7rem; font-weight: 400; letter-spacing: -0.01em; }
+      .meta { color: var(--dim); font-size: 0.8rem; margin: 0.4rem 0 0.6rem; }
       .award-badge {
-        display: inline-block; background: rgba(224, 166, 60, 0.12); color: var(--accent);
-        border: 1px solid rgba(224, 166, 60, 0.4); border-radius: 4px;
-        font-size: 0.72rem; padding: 0.15rem 0.5rem; letter-spacing: 0.04em; margin-bottom: 0.4rem;
+        display: inline-block; color: var(--note);
+        border: 1px solid var(--slot-line); border-radius: 2px;
+        font-size: 0.7rem; padding: 0.15rem 0.55rem; letter-spacing: 0.04em;
       }
-      .award-badge.inline { margin: 0; }
+      .award-badge.inline { margin-top: 0.3rem; }
+      .media-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 0.9rem; }
 
+      /* Fill slots */
       .fill-slot {
-        border: 1.5px dashed rgba(224, 166, 60, 0.45);
-        border-radius: 6px; padding: 0.9rem 1rem; margin-top: 0.9rem;
-        color: var(--dim); font-size: 0.85rem; background: rgba(224, 166, 60, 0.03);
+        border: 1.5px dashed var(--slot-line); border-radius: 3px;
+        padding: 0.95rem 1.1rem; margin-top: 1rem;
+        color: var(--dim); font-size: 0.85rem; background: var(--slot-bg);
       }
-      .fill-label { color: var(--accent); font-size: 0.7rem; letter-spacing: 0.18em; font-weight: 700; margin-bottom: 0.3rem; }
+      .fill-label { color: var(--note); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 0.35rem; }
+      .inline-slot { margin-top: 1.25rem; }
 
+      /* Credits */
+      .credits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .col-head { color: var(--dim); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 0.9rem; }
       .credits { list-style: none; }
-      .credits li {
-        display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.75rem;
-        padding: 0.7rem 0; border-bottom: 1px solid var(--line);
-      }
-      .credit-title { font-weight: 600; }
-      .credit-role { color: var(--dim); font-size: 0.78rem; }
+      .credits li { padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
+      .credit-title { display: block; font-weight: 500; font-size: 0.98rem; }
+      .credit-role { color: var(--dim); font-size: 0.74rem; }
+      .col-note { color: var(--dim); font-size: 0.78rem; margin-top: 0.8rem; font-style: italic; }
 
+      /* Awards */
       .awards { list-style: none; }
-      .awards li { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: baseline; padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
-      .award-name { color: var(--accent); font-weight: 700; }
-      .award-detail { color: var(--dim); }
-      .award-year { color: var(--dim); font-size: 0.78rem; margin-left: auto; }
+      .awards li { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: baseline; padding: 0.8rem 0; border-bottom: 1px solid var(--line); }
+      .award-name { font-weight: 600; }
+      .award-detail { color: var(--dim); font-size: 0.9rem; }
+      .award-year { color: var(--dim); font-size: 0.76rem; margin-left: auto; }
 
-      .about-grid { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: start; }
-      .headshot img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); display: block; }
-      .headshot figcaption { color: var(--accent); font-size: 0.65rem; margin-top: 0.4rem; line-height: 1.4; }
-      .bio p + p { margin-top: 0.9rem; }
+      /* About */
+      .about-grid { display: grid; grid-template-columns: 210px 1fr; gap: 2rem; align-items: start; }
+      .headshot img { width: 100%; height: auto; border-radius: 3px; border: 1px solid var(--line); display: block; filter: grayscale(1); }
+      .headshot figcaption { color: var(--note); font-size: 0.65rem; margin-top: 0.45rem; line-height: 1.4; }
+      .bio p + p { margin-top: 1rem; }
 
-      .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
-      .skills-grid h3 { color: var(--accent); font-size: 0.8rem; letter-spacing: 0.15em; margin-bottom: 0.6rem; }
+      /* Skills */
+      .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; }
       .taglist { list-style: none; }
-      .taglist li { padding: 0.25rem 0; border-bottom: 1px dotted var(--line); font-size: 0.85rem; color: var(--ink); }
+      .taglist li { padding: 0.3rem 0; border-bottom: 1px dotted var(--line); font-size: 0.85rem; }
 
+      /* Contact */
       .contact-line { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
       .btn {
-        display: inline-block; background: var(--accent); color: #1a1405; text-decoration: none;
-        padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem;
+        display: inline-block; background: var(--ink); color: var(--bg); text-decoration: none;
+        padding: 0.6rem 1.2rem; border-radius: 3px; font-weight: 500; font-size: 0.85rem;
       }
-      .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
-      .btn:hover { filter: brightness(1.1); }
+      .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+      .btn:hover { opacity: 0.82; }
 
-      footer { border-top: 1px solid var(--line); margin-top: 3.5rem; padding: 1.5rem 1.25rem; text-align: center; color: var(--dim); font-size: 0.75rem; }
+      footer { border-top: 1px solid var(--line); margin-top: 4rem; padding: 1.75rem 1.5rem; text-align: center; color: var(--dim); font-size: 0.75rem; }
+      footer a { color: var(--dim); }
 
       @media (max-width: 640px) {
         .about-grid { grid-template-columns: 1fr; }
+        .credits-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+        .media-row { grid-template-columns: 1fr; }
         .award-year { margin-left: 0; }
+        .nav-links { gap: 1rem; }
       }
     </style>
   </body>
